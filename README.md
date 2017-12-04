@@ -40,7 +40,7 @@ $ docker-compose up -d
       - Чтобы сделать ключ на linux выполняем:
 ```
 $ ssh-keygen -t rsa
-$ scp ~/.ssh/id_rsa.pub admin@<mikrotik_ip>:mykey.pub
+$ scp ~/.ssh/id_rsa.pub rancid@<mikrotik_ip>:mykey.pub
 ```
 Passphrase! не заполняем. Заводим пользователя rancid на mikrotik(можно только для чтения) и импортируем ему наш ключ:
 ```
